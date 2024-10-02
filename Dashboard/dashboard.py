@@ -9,13 +9,13 @@ sns.set(style='dark')
 # Load dataset
 @st.cache_resource
 def load_hour_data():
-    return pd.read_csv("Dashboard/hour.csv")
+    return pd.read_csv("hour.csv")
 
 hour_dataset = load_hour_data()  # Pemanggilan langsung tanpa `st.cache_resource`
 
 @st.cache_data
 def load_day_data():
-    return pd.read_csv("Dashboard/day.csv")
+    return pd.read_csv("day.csv")
 
 day_dataset = load_day_data()  # Pemanggilan langsung tanpa `st.cache_resource`
 
