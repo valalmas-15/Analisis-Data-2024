@@ -7,15 +7,15 @@ import numpy as np
 sns.set(style='dark')
 
 # Load dataset
-@st.cache_data
+@st.cache_resource
 def load_hour_data():
-    return pd.read_csv("hour.csv")
+    return pd.read_csv("Dashboard/hour.csv")
 
 hour_dataset = load_hour_data()  # Pemanggilan langsung tanpa `st.cache_resource`
 
 @st.cache_data
 def load_day_data():
-    return pd.read_csv("day.csv")
+    return pd.read_csv("Dashboard/day.csv")
 
 day_dataset = load_day_data()  # Pemanggilan langsung tanpa `st.cache_resource`
 
@@ -149,7 +149,8 @@ st.pyplot(fig)
 
 st.write("""
          **Simpulan Utama:**
-         1. Pola Sewa Sepeda Berdasarkan Waktu (Hari, Bulan, Musim):
+         
+1. Pola Sewa Sepeda Berdasarkan Waktu (Hari, Bulan, Musim):
 
 - Jumlah sewa sepeda menunjukkan variasi yang jelas sepanjang tahun, dengan peningkatan penggunaan selama bulan-bulan hangat (Mei hingga September), terutama di musim panas. Sebaliknya, musim dingin mencatat penurunan yang signifikan.
 - Pola ini mengindikasikan bahwa cuaca berpengaruh besar terhadap minat bersepeda, di mana pengguna lebih cenderung menggunakan sepeda untuk rekreasi dan transportasi selama musim yang nyaman.
