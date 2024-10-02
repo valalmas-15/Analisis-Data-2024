@@ -1,1 +1,1 @@
-http://localhost:8501
+https://valalmas-15-analisis-data-2024-dashboarddashboard-we94mu.streamlit.app/
