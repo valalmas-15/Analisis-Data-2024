@@ -97,7 +97,6 @@ st.pyplot(fig)
 # Summary of Findings
 st.subheader("Summary of Findings")
 st.write("""
-         Simpulan Utama:
          * Grafik menunjukkan bahwa rata-rata jumlah sewa sepeda stabil sepanjang minggu, tanpa ada hari yang menonjol secara signifikan.
          * Jumlah sewa tertinggi terjadi di bulan-bulan dari Mei hingga September, dengan puncaknya pada bulan Juni.
          * Jumlah sewa sepeda menunjukkan peningkatan signifikan pada musim panas, sementara musim dingin mencatat jumlah sewa yang lebih rendah.
@@ -147,8 +146,15 @@ axs[1, 1].set_ylabel('Jumlah Sewa (count_cr)')
 plt.tight_layout()
 st.pyplot(fig)
 
+# Summary of Findings
+st.subheader("Summary of Findings")
 st.write("""
-         **Simpulan Utama:**
+        * Hari Kerja vs. Akhir Pekan: Jumlah sewa sepeda lebih tinggi pada jam sibuk hari kerja (pagi dan sore), sedangkan pada akhir pekan penggunaan sepeda lebih merata sepanjang hari.
+        * Cuaca: Suhu yang lebih tinggi cenderung mendorong lebih banyak orang untuk menyewa sepeda, sementara kelembaban tidak secara signifikan memengaruhi jumlah sewa.
+         """)
+
+st.subheader("**Simpulan Utama:**")
+st.write("""
          
 1. Pola Sewa Sepeda Berdasarkan Waktu (Hari, Bulan, Musim):
 
