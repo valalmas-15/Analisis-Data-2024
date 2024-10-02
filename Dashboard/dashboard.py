@@ -7,7 +7,7 @@ import numpy as np
 sns.set(style='dark')
 
 # Load dataset
-@st.cache_data
+@st.cache_resource
 def load_hour_data():
     return pd.read_csv("Dashboard/hour.csv")
 
